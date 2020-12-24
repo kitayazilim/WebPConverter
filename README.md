@@ -1,3 +1,3 @@
 # WebPConverter
 
-WebP Converter For command-line
+WebP Converter For CLI
