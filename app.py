@@ -31,7 +31,7 @@ def printTable(myDict, colList=None):
    myList.insert(1, ['-' * i for i in colSize]) # Seperating line
    for item in myList: print(formatStr.format(*item))
 
-if __name__ == "__main__":
+def main():
   info_list = []
   for infile in os.listdir(args.path):
     f, e = os.path.splitext(infile)
@@ -57,3 +57,8 @@ if __name__ == "__main__":
           print("cannot convert", infile, str(e))
 
   printTable(info_list, ['image','old_size','new_size','px'])
+
+
+
+if __name__ == "__main__":
+    main()
